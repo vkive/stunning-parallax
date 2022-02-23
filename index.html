@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <section>
+            <header>
+                <a href="#" class="logo">World</a>
+                <div class="toggle"></div>
+            </header>
+            <img src="img/bg.jpg" class="bg">
+            <img src="img/bird.png" class="bird">
+            <div class="content">
+                <h2>We can save The<br><span>Earth</span></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Auctor urna nunc id cursus metus aliquam eleifend. Amet nisl purus in mollis nunc sed. Tortor dignissim convallis aenean et tortor at risus. 
+                    Id neque aliquam vestibulum morbi blandit cursus risus at. 
+                </p>
+                <a href="#">Join Us</a>
+            </div>
+            <ul class="sci">
+                <li><a href="#"><img src="img/facebook.png"></a></li>
+                <li><a href="#"><img src="img/twitter.png"></a></li>
+                <li><a href="#"><img src="img/instagram.png"></a></li>
+            </ul>
+            <div class="textBlocks">
+                <div class="block">
+                    <h3>Defenders of Earth</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Auctor urna nunc id cursus metus aliquam eleifend.</p>
+                </div>
+                <div class="block">
+                    <h3>How to save Water</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Auctor urna nunc id cursus metus aliquam eleifend.</p>
+                </div>
+            </div>
+        </section>
+        <script>
+            document.addEventListener("mousemove", function(e){
+                const bg= document.querySelector('.bg');
+                const bird = document.querySelector('.bird');
+                const content = document.querySelector('.content');
+
+                bg.style.width = 100 + e.pageX/100 + '%';
+                bg.style.height = 100 + e.pageX/100 + '%';
+
+                bird.style.right = 100 + e.pageX/2 + 'px';
+                content.style.left = 100 + e.pageX/2 + 'px';
+            })
+        </script>
+    </body>
+</html>
